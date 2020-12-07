@@ -1,0 +1,135 @@
+.category-warp {
+    width: 70%;
+    margin: 0 auto;
+    padding: 100px 0;
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 80%;
+        margin: 0 auto;
+    } 
+}
+
+.category {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    
+    &__intro--1 {
+        flex: 0 0 60%;
+        text-align: right; 
+
+        @media only screen and (max-width:$bp-medium) {
+            flex: 0 0 100%;
+            order: 1; 
+            text-align: left;
+            padding: 1rem 0;
+        } 
+    }
+
+    &__intro--2 {
+
+        @media only screen and (max-width:$bp-medium) {
+            flex: 0 0 100%;
+            order: 1; 
+            text-align: left;
+            padding: 1rem 0;
+        } 
+    }
+
+    &__heading {
+        font-size: 4.5rem;
+        font-family: 'caveat-bold';
+        font-weight: 700;
+
+        @media only screen and (max-width:$bp-medium) {
+            font-size: 3rem;
+        }
+    }
+    &__price {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        color: $color-grey;
+        padding-top: 2px;
+        padding-bottom: 10px;
+
+        @media only screen and (max-width:$bp-medium) {
+            padding-bottom: 2px;
+            font-size: 1.8rem;
+        }
+    }
+
+    &__textdemo {
+        position: relative;
+        display: inline-block;
+        background-color: none;
+        color: $color-secondary;
+        font-size: 1.8rem;
+        text-decoration: none;
+        padding: 1rem;
+        transition: all .15s ease-in-out;
+
+        @media only screen and (max-width:$bp-small) {
+            font-size: 1.4rem;
+            // padding-left: 0; 
+        }
+    }
+
+    &__textdemo:hover,
+    &__textdemo:focus {
+        color: #fff;
+        border-bottom: none;
+    }
+
+    &__textdemo:hover::after {
+        transition: all .15s ease-in-out;
+        height: 100%;
+
+        @media only screen and (max-width:$bp-small) {
+            height: 60%;
+        }
+    }
+
+    &__textdemo::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        height: .1rem;
+        background-color: $color-secondary;
+        transition: all .15s cubic-bezier(.67,.52,0,0);
+        z-index: -1;
+
+        @media only screen and (max-width:$bp-medium) {
+           margin-bottom: 1rem;
+        }
+    }
+    &__demo {
+        flex: 0 0 40%;
+        position: relative;
+        overflow: hidden;
+
+        @media only screen and (max-width:$bp-medium) {
+            flex: 0 0 100%;
+        } 
+      
+    }
+
+    &__img {
+        padding: 0 30px;
+        @media only screen and (max-width:$bp-medium) {
+          padding: 0;
+        } 
+    }
+}
+
+
+
+.img-category {
+    width: 100%;
+    vertical-align: middle;
+
+    @media only screen and (max-width:$bp-medium) {
+       border-radius: 5px;
+      }
+}

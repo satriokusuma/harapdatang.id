@@ -1,0 +1,149 @@
+.leaf-left {
+    position: absolute;
+    top: 2rem;
+    left: -10rem;
+    z-index: -1;
+
+    @media only screen and (max-width:$bp-medium) {
+       top: 4rem;
+       left: -13rem;
+    }  
+}
+
+.leaf-right {
+    position: absolute;
+    top: 20rem;
+    right: -10rem;
+    z-index: -1;
+
+    @media only screen and (max-width:$bp-medium) {
+        top: 50rem;
+        right: -10rem;
+     } 
+}
+
+.leaf-left--2 {
+    position: absolute;
+    top: 2rem;
+    left: -10rem;
+    z-index: -1;
+    transform: scaleX(-1);
+
+    @media only screen and (max-width:$bp-medium) {
+        top: 5rem;
+        left: -10rem;
+     } 
+}
+
+.leaf-right--2 {
+    position: absolute;
+    top: 45rem;
+    right: -5rem;
+    z-index: -1;
+
+    @media only screen and (max-width:$bp-medium) {
+        bottom: 0;
+        top: auto;
+        right: -4rem; 
+     }
+}
+
+.leaf-color-1 {
+    position: absolute;
+    z-index: 1;
+    right: 3rem;
+    width: 29rem;
+    height: auto;
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 20rem;
+        right: 2.5rem;
+        top: 8rem;
+     } 
+}
+
+.leaf-grey-1 {
+    fill: #EBF1FA;
+    width: 33rem;
+    height: auto;
+    transform: rotate(14deg);
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 30rem;
+        transform: rotate(10deg);
+     } 
+}
+
+.leaf-grey {
+    fill: #EBF1FA;
+    width: 30rem;
+    height: auto;
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 18rem;
+     } 
+}
+.leaf-color {
+    fill: #035aa6;
+    width: 17rem;
+    position: absolute;
+    z-index: 1;
+    right: 6rem;
+    top: 5rem;
+    height: auto;
+    transform: rotate(18deg);
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 10rem;
+        right: 3rem;
+        top: 2rem;
+     } 
+}
+.leaf-flower {
+    width: 19rem;
+    height: auto;
+    transform: rotate(-60deg);
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 12rem;
+        height: auto;
+     } 
+}
+
+.leaf-navbar {
+    display: none;
+
+    @media only screen and (max-width:$bp-small) {
+        position: absolute;
+        top: -3rem;
+        right: -16rem;
+        transform: rotate(30deg);
+        z-index: -1;
+        display: block;
+     } 
+   
+}
+
+.leaf-navbar-bottom {
+    display: none;
+
+    @media only screen and (max-width:$bp-small) {
+        position: absolute;
+        bottom: 0;
+        right: 20rem;
+        z-index: -1;
+        display: block;
+     } 
+  
+}
+
+.img-leaf-1 {
+    width: 40rem;
+    height: auto;
+    vertical-align: middle;
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 30rem;
+    }
+}
+

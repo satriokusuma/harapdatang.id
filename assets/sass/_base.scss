@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 62.5%;
+    vertical-align: baseline;
+    overflow-x: hidden;
+
+     
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 50%;
+    }
+}
+
+body,html {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+   background: $color-background;
+   line-height: 1.5;
+   overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+}
+
+.container-heading {
+    position: relative;
+
+    @media only screen and (max-width:$bp-medium) {
+       padding: 40px 0;
+    }
+}
+
+img {
+    pointer-events: none;
+}
+

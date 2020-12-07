@@ -1,0 +1,21 @@
+.example-warp {
+    background-color: $color-five;
+    padding: 50px 0;
+
+    @media only screen and (max-width:$bp-medium) {
+        padding: 40px 0;
+     }
+}
+
+.example-container {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.example-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

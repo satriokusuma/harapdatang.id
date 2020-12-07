@@ -1,0 +1,68 @@
+.container-home {
+    width: 70%;
+    margin: 0 auto;
+    padding: 120px 0;
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 80%;
+        margin: 0 auto;
+        min-height: 100vh; 
+        padding: 50px 0;
+        display: flex;     
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        min-height: 80vh;
+        display: flex;
+    }
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    @media only screen and (max-width:$bp-medium) {
+        flex-wrap: wrap;
+    }
+    
+    &__hero {
+        width: 100%;
+        @media only screen and (max-width:$bp-medium) {
+           background-color: aliceblue;
+           border-radius: 5px;
+        }
+    }
+
+    &__intro {
+        width: 100%;
+
+        @media only screen and (max-width:$bp-medium) {
+            order: 1;
+            padding: 10px;
+        }
+    }
+    &__img {
+        vertical-align: middle;
+        height: auto;
+        width: 100%;
+
+        @media only screen and (max-width:$bp-medium) {
+            padding: 20px 0;
+         }
+        // display: block;
+    }
+}
+
+.chatIcon {
+    animation: fadeInUp 3s ease-in-out infinite alternate;
+    
+}
+.loveIcon {
+    animation: fadeInUp 3.2s ease-in-out infinite alternate;
+    
+}
+.invatition {
+    animation: fadeInUp 4s ease-in-out infinite alternate;
+    
+}

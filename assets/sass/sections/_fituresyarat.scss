@@ -1,0 +1,90 @@
+.fiture {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 80%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    &__intro {
+       width: 60%;
+        @media only screen and (max-width:$bp-medium) {
+            width: 100%;
+        }
+    }
+
+    &__hero {
+       width: 40%;
+        @media only screen and (max-width:$bp-medium) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &__img {
+        width: 100%;
+        display: block;
+       
+    }
+
+}
+
+.syarat {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  
+
+    @media only screen and (max-width:$bp-medium) {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__intro {
+       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+        @media only screen and (max-width:$bp-medium) {
+            width: 100%;
+           
+        }
+    }
+
+}
+
+.wave {
+    display: inline-block;
+    width: 60%;
+    overflow: hidden;
+
+    @media only screen and (max-width:$bp-medium) {
+        display: none;
+    }
+}
+
+.wave::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2rem;
+    background-image: url(/assets/img/zigwigwi.svg);
+    background-color: transparent;
+    background-size: 11.5rem 2rem;
+    margin: 15px 0;  
+}
+
+
+
+.svg-border {
+    width: 100%;
+    height: .7rem;
+    margin-top: 1.8rem; 
+    display: block;
+}

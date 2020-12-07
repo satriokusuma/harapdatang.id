@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'poppins-relugar';
+    src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'poppins-bold';
+    src: url(/assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-medium';
+    src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'poppins-light';
+    src: url(/assets/fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: 'poppins-thin';
+    src: url(/assets/fonts/Poppins/Poppins-Thin.ttf);
+}
+@font-face {
+    font-family: 'caveat-regular';
+    src: url(/assets/fonts/Caveat/Caveat-Regular.ttf);
+}
+@font-face {
+    font-family: 'caveat-bold';
+    src: url(/assets/fonts/Caveat/Caveat-Bold.ttf);
+}
+@font-face {
+    font-family: 'caveat-medium';
+    src: url(/assets/fonts/Caveat/Caveat-Medium.ttf);
+}
+
+
+body {
+    font-family: 'poppins-relugar';
+    color: $color-primary;
+}
+
+.heading-first {
+    font-size: 4.5rem;
+
+    @media only screen and (max-width:$bp-small) {
+        font-size: 3.5rem;
+    }
+}
+
+.heading-third {
+    font-size: 3rem;
+    font-family: 'caveat-medium';
+    letter-spacing: 5px;
+    font-weight: 100;
+    color: $color-secondary;
+    margin: 1.4rem 0;
+
+    @media only screen and (max-width:$bp-medium) {
+      display: none;
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        display: none;
+    }
+
+    &--2 {
+        font-size: 3rem;
+        font-family: 'caveat-medium';
+        letter-spacing: 5px;
+        font-weight: 100;
+        color: $color-secondary;
+        margin: 1.4rem 0;
+        text-align: center;
+
+        @media only screen and (max-width:$bp-medium) {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.paragraf-intro {
+    font-size: 1.8rem;
+    color: $color-grey;
+    font-family: 'poppins-light';
+    margin-top: 8px;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    &--1 {
+        font-size: 1.8rem;
+        color: $color-grey;
+        font-family: 'poppins-light';
+        margin-top: 8px;
+        margin-bottom: 3rem;
+
+        @media only screen and (max-width:$bp-medium) {
+            font-size: 1.6rem;
+            font-family: 'poppins-relugar';
+            text-align: center;
+            line-height: 2;
+        }
+    }
+   
+}
+
+.heading-span {
+    font-size: 1.8rem;
+    
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 1.6rem;
+        letter-spacing: .8px;
+        line-height: 1.6;
+    }
+}
+
+.heading-second-wave {
+    font-size: 4rem;
+    font-family: 'poppins-relugar';
+
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 3.5rem;
+        text-align: center; 
+    }
+
+    &--2 {
+        font-size: 4rem;
+        font-family: 'poppins-relugar';
+        text-align: center;
+
+        @media only screen and (max-width:$bp-medium) {
+            font-size: 3rem;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.heading-footer {
+    font-size: 1.8rem;
+    color: $color-primary;
+    font-family: 'poppins-bold';
+    text-decoration: none;
+}
+
+.span-footer {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1.5rem 2rem;
+
+    @media only screen and (max-width:$bp-medium) {
+       flex: 0 0 100%;
+    }
+   
+
+    &--2 {
+        text-align: center; 
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        padding: 1.5rem 2rem;
+
+        @media only screen and (max-width:$bp-medium) {
+            flex: 0 0 100%;
+        }
+    }
+}
+
+
+
+.list-item {
+    list-style: none;
+    display: flex;
+    padding: 1rem;
+}
+
+.heading-animate {
+    overflow: hidden;
+    font-size: 7rem;
+    padding: 20px 0;
+    color: $color-third;
+    font-family: 'poppins-bold';
+
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 5rem; 
+        padding: 10px 0;
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        font-size: 4rem; 
+        padding: 10px 0;
+    }
+
+}
+
+.animate-text {
+    margin-left: 100vw;
+    width: 100vw;
+    will-change: transform;
+    text-align: center;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: textrunning;
+    display: inline-block!important;
+}

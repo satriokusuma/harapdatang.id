@@ -1,0 +1,71 @@
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.preload {
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color:$color-background;
+  transition: all .7s cubic-bezier(.24,.51,.12,.79);
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -100px;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border: none;
+}
+
+
+
+
+@keyframes fadeInUp {
+    from {
+      
+      transform: translate3d(0,20px,0)
+      
+    }
+  
+    to {
+      
+      transform: translate3d(0,0,0);
+      opacity: 1
+    }
+  }
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateZ(0) scaleY(1) scaleX(0);
+        transform: translateZ(0) scaleY(1) scaleX(0)
+    }
+
+    50% {
+        -webkit-transform: translateZ(0) scaleY(1) scaleX(1);
+        transform: translateZ(0) scaleY(1) scaleX(1)
+    }
+
+    to {
+        -webkit-transform: translate3d(100%,0,0) scaleY(1) scaleX(1);
+        transform: translate3d(100%,0,0) scaleY(1) scaleX(1)
+    }
+}
+
+@keyframes textrunning {
+  0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0)
+  }
+
+  to {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%)
+  }
+}

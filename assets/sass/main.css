@@ -158,42 +158,42 @@ img {
 
 @font-face {
   font-family: 'poppins-relugar';
-  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
   font-family: 'poppins-bold';
-  src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
 }
 
 @font-face {
   font-family: 'poppins-medium';
-  src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
   font-family: 'poppins-light';
-  src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
+  src: url(../fonts/Poppins/Poppins-Light.ttf);
 }
 
 @font-face {
   font-family: 'poppins-thin';
-  src: url(../assets/fonts/Poppins/Poppins-Thin.ttf);
+  src: url(../fonts/Poppins/Poppins-Thin.ttf);
 }
 
 @font-face {
   font-family: 'caveat-regular';
-  src: url(../assets/fonts/Caveat/Caveat-Regular.ttf);
+  src: url(../fonts/Caveat/Caveat-Regular.ttf);
 }
 
 @font-face {
   font-family: 'caveat-bold';
-  src: url(../assets/fonts/Caveat/Caveat-Bold.ttf);
+  src: url(../fonts/Caveat/Caveat-Bold.ttf);
 }
 
 @font-face {
   font-family: 'caveat-medium';
-  src: url(../assets/fonts/Caveat/Caveat-Medium.ttf);
+  src: url(../fonts/Caveat/Caveat-Medium.ttf);
 }
 
 body {
@@ -712,7 +712,7 @@ body {
     height: 100vh;
     text-align: center;
     position: relative;
-    background-image: url(assets/img/navbar-top.svg), url(assets/img/navbar-bottom.svg);
+    background-image: url(../img/navbar-top.svg), url(../img/navbar-bottom.svg);
     background-position: right top,left bottom;
     background-size: 55rem,55rem;
     background-repeat: no-repeat;

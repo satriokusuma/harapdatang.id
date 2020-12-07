@@ -20,9 +20,9 @@ navbarToggler.addEventListener("click", navbarTogglerClick);
 function navbarTogglerClick() {
   navbarToggler.classList.toggle("open-navbar-toggler");
   navbarMenu.classList.toggle("open");
-  root.classList.toggle("open");
   navbarHeader.classList.toggle("open");
   navbarImg.classList.toggle("close-img");
+  root.classList.toggle("open");
 }
 
 

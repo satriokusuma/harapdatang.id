@@ -785,9 +785,9 @@ body {
     overflow: hidden;
     z-index: 99999;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding: 0;
   }
 }

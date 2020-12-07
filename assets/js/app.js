@@ -11,7 +11,7 @@ const navbarToggler = document.querySelector(".navbar-toggler");
 const navbarMenu = document.querySelector(".navbar ");
 const navbarLinks = document.querySelectorAll(".site-link");
 const navbarImg = document.querySelector(".site-branding");
-// const navbarHeader = document.querySelector(".navigation");
+const navbarHeader = document.querySelector(".navigation");
 const root = document.getElementsByTagName( 'html' )[0]; // '0' to assign the first (and only `HTML` tag)
 
 
@@ -20,7 +20,7 @@ navbarToggler.addEventListener("click", navbarTogglerClick);
 function navbarTogglerClick() {
   navbarToggler.classList.toggle("open-navbar-toggler");
   navbarMenu.classList.toggle("open");
-  // navbarHeader.classList.toggle("open");
+  navbarHeader.classList.toggle("open");
   navbarImg.classList.toggle("close-img");
   root.classList.toggle("open");
 }
